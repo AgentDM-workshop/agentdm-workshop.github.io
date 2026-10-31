@@ -33,6 +33,7 @@ window.AGENTDM = {
     { name: "Ying Zhang",      aff: "RIKEN Center for Advanced Intelligence Project",          country: "Japan",         photo: "", url: "" },
     { name: "Bowei He",        aff: "Mohamed bin Zayed University of Artificial Intelligence", country: "UAE",           photo: "", url: "" },
     { name: "Jian Wu",         aff: "Westlake University",                                     country: "China",         photo: "", url: "" },
+    { name: "Zhen Wang",       aff: "Huzhou Normal University",                                country: "China",         photo: "", url: "" },
     { name: "Haolun Wu",       aff: "McGill University & Mila",                                country: "Canada",        photo: "", url: "" },
     { name: "Satoshi Kosugi",  aff: "Institute of Science Tokyo",                              country: "Japan",         photo: "", url: "" },
     { name: "Mengting Wan",    aff: "Microsoft",                                               country: "USA",           photo: "", url: "" }
