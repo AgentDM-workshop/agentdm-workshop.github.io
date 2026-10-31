@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgentDM @ WWW 2027 · Structured Data Mining with LLM Agents</title>
+  <meta name="description" content="The First Workshop on Structured Data Mining with LLM Agents (AgentDM), co-located with The ACM Web Conference 2027, Dublin, Ireland, May 10–14, 2027.">
+  <meta property="og:title" content="AgentDM @ WWW 2027 — Structured Data Mining with LLM Agents">
+  <meta property="og:description" content="Call for Papers: the first workshop on autonomous, verifiable structured data mining with LLM agents. Dublin, Ireland · May 2027.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="brand" aria-label="AgentDM home">
+      <img src="assets/img/favicon.svg" alt="" width="28" height="28">
+      <span>Agent<b>DM</b></span><em>WWW&nbsp;’27</em>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#topics">Topics</a>
+      <a href="#cfp">Call for Papers</a>
+      <a href="#dates">Dates</a>
+      <a href="#program">Program</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#organizers">Organizers</a>
+      <a href="#cfp" class="nav__cta">Submit</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero__vignette" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <div class="pill"><span class="pulse"></span> Call for Papers · Coming Soon</div>
+    <p class="hero__kicker mono">The ACM Web Conference 2027 · Workshop</p>
+    <h1 class="hero__title">
+      <span class="grad">AgentDM</span>
+      <span class="hero__sub">The First Workshop on<br>Structured Data Mining with LLM Agents</span>
+    </h1>
+
+    <div class="hero__meta">
+      <div><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Dublin, Ireland</div>
+      <div><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm-2 8h14v10H5V10z"/></svg>May 10–14, 2027</div>
+      <div><svg viewBox="0 0 24 24"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 2c-2.7 0-8 1.3-8 4v3h10v-3c0-1.1.4-2 1.1-2.8C9.9 13.1 8.8 13 8 13zm8 0c-2.7 0-8 1.3-8 4v3h16v-3c0-2.7-5.3-4-8-4z"/></svg>Full-day · In-person</div>
+    </div>
+
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div class="countdown__label mono" id="cdLabel">Paper submission deadline (tentative)</div>
+      <div class="countdown__grid">
+        <div><b id="cdD">--</b><span>days</span></div>
+        <div><b id="cdH">--</b><span>hours</span></div>
+        <div><b id="cdM">--</b><span>min</span></div>
+        <div><b id="cdS">--</b><span>sec</span></div>
+      </div>
+    </div>
+
+    <div class="hero__actions">
+      <a href="#cfp" class="btn btn--primary">Read the Call for Papers <span>→</span></a>
+      <a href="#dates" class="btn btn--ghost">Important Dates</a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Tables</span><i>◆</i><span>Databases</span><i>◆</i><span>Knowledge Graphs</span><i>◆</i><span>Time Series</span><i>◆</i><span>Spatiotemporal Data</span><i>◆</i><span>Web APIs</span><i>◆</i><span>Planning</span><i>◆</i><span>Tool Use</span><i>◆</i><span>Verification</span><i>◆</i><span>Benchmarks</span><i>◆</i>
+    <span>Tables</span><i>◆</i><span>Databases</span><i>◆</i><span>Knowledge Graphs</span><i>◆</i><span>Time Series</span><i>◆</i><span>Spatiotemporal Data</span><i>◆</i><span>Web APIs</span><i>◆</i><span>Planning</span><i>◆</i><span>Tool Use</span><i>◆</i><span>Verification</span><i>◆</i><span>Benchmarks</span><i>◆</i>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="wrap grid-2">
+    <div class="reveal">
+      <p class="eyebrow mono">01 — Overview</p>
+      <h2>From passive understanding to <span class="grad">autonomous</span> data mining.</h2>
+    </div>
+    <div class="reveal prose">
+      <p>As large language models evolve from passive interfaces into autonomous systems capable of <strong>planning, tool use, and iterative execution</strong>, structured data mining is shifting from task-specific prediction toward end-to-end analytical workflows.</p>
+      <p><strong>AgentDM</strong> brings together researchers in agentic AI, data mining and knowledge discovery, data management, graph and temporal learning, information retrieval, and trustworthy AI to study how agents can ground user goals, plan analyses, invoke tools, discover and predict patterns, verify intermediate results, and communicate reliable evidence from heterogeneous structured data.</p>
+      <blockquote>How can LLM agents <em>reliably</em> perform end-to-end structured data mining?</blockquote>
+    </div>
+  </div>
+
+  <!-- pipeline -->
+  <div class="wrap">
+    <ol class="pipeline reveal" aria-label="Agentic data mining workflow">
+      <li><span class="mono">01</span>Ground</li>
+      <li><span class="mono">02</span>Plan</li>
+      <li><span class="mono">03</span>Invoke tools</li>
+      <li><span class="mono">04</span>Discover &amp; predict</li>
+      <li><span class="mono">05</span>Verify</li>
+      <li><span class="mono">06</span>Explain</li>
+    </ol>
+  </div>
+
+  <div class="wrap objectives">
+    <article class="obj reveal"><b class="mono">O1</b><h3>Shared agenda</h3><p>Establish agentic data mining as a shared research agenda across communities.</p></article>
+    <article class="obj reveal"><b class="mono">O2</b><h3>Reliable workflows</h3><p>Identify architectures, representations, reasoning and planning mechanisms for reliable analytical workflows.</p></article>
+    <article class="obj reveal"><b class="mono">O3</b><h3>Beyond final answers</h3><p>Develop evaluation principles assessing grounding, planning, tool execution, verification, robustness, and provenance.</p></article>
+    <article class="obj reveal"><b class="mono">O4</b><h3>Lasting community</h3><p>Build a cross-community network producing reusable resources, benchmarks, and future shared tasks.</p></article>
+  </div>
+</section>
+
+<!-- ============ TOPICS ============ -->
+<section class="section section--alt" id="topics">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow mono">02 — Scope</p>
+      <h2>Six themes of interest</h2>
+      <p class="lead">We welcome methods, systems, benchmarks, empirical studies, resources, reproducibility studies, and position papers that place LLM agents as substantive components of end-to-end data-mining workflows.</p>
+    </div>
+
+    <div class="topics">
+      <article class="topic reveal">
+        <div class="topic__ico"><svg viewBox="0 0 48 48"><rect x="6" y="6" width="36" height="36" rx="4"/><path d="M6 18h36M6 30h36M18 6v36M30 6v36"/></svg></div>
+        <h3>Foundations &amp; Architectures</h3>
+        <p>Principles, architectures, and representations for autonomous agents over tables, databases, graphs, time series, spatiotemporal data, knowledge graphs, interaction networks, and structured Web data.</p>
+      </article>
+      <article class="topic reveal">
+        <div class="topic__ico"><svg viewBox="0 0 48 48"><circle cx="10" cy="24" r="4"/><circle cx="38" cy="12" r="4"/><circle cx="38" cy="36" r="4"/><path d="M14 24h8l6-12h6M22 24l6 12h6"/></svg></div>
+        <h3>Grounding, Reasoning &amp; Planning</h3>
+        <p>Grounding goals in schemas; task decomposition, semantic parsing, model/tool selection, workflow synthesis, reflection, and iterative execution over heterogeneous schemas and evolving APIs.</p>
+      </article>
+      <article class="topic reveal">
+        <div class="topic__ico"><svg viewBox="0 0 48 48"><path d="M4 38l10-12 8 6 10-16 12 10"/><circle cx="32" cy="16" r="3"/><path d="M4 44h40"/></svg></div>
+        <h3>Discovery, Prediction &amp; Decisions</h3>
+        <p>Agent-driven pattern and knowledge discovery, anomaly detection, relational reasoning, forecasting, recommendation, trend discovery, automated experimentation, and hypothesis generation.</p>
+      </article>
+      <article class="topic reveal">
+        <div class="topic__ico"><svg viewBox="0 0 48 48"><ellipse cx="24" cy="10" rx="14" ry="5"/><path d="M10 10v14c0 3 6 5 14 5s14-2 14-5V10M10 24v14c0 3 6 5 14 5s14-2 14-5V24"/></svg></div>
+        <h3>Tools, Memory &amp; Collaboration</h3>
+        <p>Databases, retrieval and Web search, SQL/Python environments, Web APIs and analytical models; memory, state management, human–agent interaction, and multi-agent analytics.</p>
+      </article>
+      <article class="topic reveal">
+        <div class="topic__ico"><svg viewBox="0 0 48 48"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="M17 24l5 5 10-11"/></svg></div>
+        <h3>Trust, Verification &amp; Responsibility</h3>
+        <p>Verifying intermediate computations and conclusions: statistical validity, uncertainty, provenance, reproducibility, interpretability, robustness, privacy, fairness, and governance.</p>
+      </article>
+      <article class="topic reveal">
+        <div class="topic__ico"><svg viewBox="0 0 48 48"><path d="M8 40V26M20 40V14M32 40V20M44 40V8"/><path d="M4 44h42"/></svg></div>
+        <h3>Evaluation, Benchmarks &amp; Deployment</h3>
+        <p>Datasets, benchmarks, simulators and protocols for end-to-end agentic mining: generalization, scalability, cost, reliability, distribution shift, and Web-scale deployment.</p>
+      </article>
+    </div>
+
+    <details class="questions reveal">
+      <summary><span class="mono">+</span> Cross-cutting scientific questions</summary>
+      <ol>
+        <li>How can an agent transfer analytical strategies across tables, graphs, databases, and temporal data without reducing every task to unconstrained code generation?</li>
+        <li>How should long-horizon workflows represent uncertainty and propagate errors when an early grounding or tool-selection mistake can invalidate later conclusions?</li>
+        <li>What intermediate state — plans, programs, evidence, diagnostics, provenance, self-checks — makes autonomous analysis auditable and reproducible?</li>
+        <li>How should agents adapt when schemas, distributions, APIs, or tools change during deployment?</li>
+        <li>When should an agent act autonomously, and when should it defer to a human analyst?</li>
+      </ol>
+    </details>
+  </div>
+</section>
+
+<!-- ============ CFP ============ -->
+<section class="section" id="cfp">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow mono">03 — Call for Papers</p>
+      <h2>Submit your work</h2>
+      <p class="lead">Full submission guidelines, page limits, and the submission portal will be released soon. Final policies follow the WWW 2027 workshop and Companion Proceedings rules.</p>
+    </div>
+
+    <div class="cfp">
+      <div class="cfp__types reveal">
+        <h3>Contribution types</h3>
+        <ul class="chips">
+          <li>Full research papers</li>
+          <li>Short / emerging-idea papers</li>
+          <li>Benchmark &amp; resource papers</li>
+          <li>Reproducibility &amp; evaluation studies</li>
+          <li>Position papers</li>
+          <li class="chip--muted">Non-archival track*</li>
+        </ul>
+        <p class="fine">* Subject to WWW policy, a clearly separated non-archival option may accommodate relevant work already published or under review elsewhere.</p>
+
+        <h3>Review process</h3>
+        <ul class="ticks">
+          <li><b>Double-blind</b> review for archival submissions</li>
+          <li>~<b>3 reviews</b> per paper with explicit conflict-of-interest handling</li>
+          <li>Criteria: technical quality, relevance, rigor, reproducibility, clarity of evidence, and potential to stimulate discussion</li>
+          <li>Contribution-appropriate criteria for benchmark, reproducibility, and position papers</li>
+          <li>All accepted papers are presented as <b>spotlights + posters</b></li>
+        </ul>
+      </div>
+
+      <aside class="cfp__card reveal">
+        <div class="cfp__glow" aria-hidden="true"></div>
+        <p class="mono eyebrow">Submission</p>
+        <dl>
+          <div><dt>Format</dt><dd>ACM <code>sigconf</code> template</dd></div>
+          <div><dt>Page limits</dt><dd>To be announced</dd></div>
+          <div><dt>Anonymity</dt><dd>Double-blind</dd></div>
+          <div><dt>Proceedings</dt><dd>WWW ’27 Companion (archival track)</dd></div>
+          <div><dt>Deadline</dt><dd id="cfpDeadline">TBA</dd></div>
+        </dl>
+        <a id="submitBtn" class="btn btn--primary btn--block is-disabled" aria-disabled="true">Submission portal · Coming Soon</a>
+        <a class="btn btn--ghost btn--block" id="templateBtn" target="_blank" rel="noopener">ACM template ↗</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DATES ============ -->
+<section class="section section--alt" id="dates">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow mono">04 — Timeline</p>
+      <h2>Important dates</h2>
+      <p class="lead">All deadlines are <b>23:59 Anywhere on Earth (AoE, UTC−12)</b>. Dates marked <span class="tag tag--tent">tentative</span> will be confirmed once the WWW 2027 workshop schedule is final.</p>
+    </div>
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</section>
+
+<!-- ============ PROGRAM ============ -->
+<section class="section" id="program">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow mono">05 — Program</p>
+      <h2>A workshop built for interaction</h2>
+      <p class="lead">Full-day, in-person. Substantial time is devoted to participant interaction rather than a mini-conference format.</p>
+    </div>
+
+    <div class="formats reveal">
+      <div><b>Spotlights &amp; Posters</b><span>Every accepted paper gets the stage, then deeper poster discussion.</span></div>
+      <div><b>Research Speed-Dating</b><span>Timed pairings across complementary expertise.</span></div>
+      <div><b>Breakouts &amp; Panel</b><span>Group outputs stress-tested by panelists and audience.</span></div>
+      <div><b>Benchmark Roadmap</b><span>Open problems and shared tasks, released publicly.</span></div>
+    </div>
+
+    <div class="schedule reveal">
+      <div class="schedule__head"><span class="mono">Tentative schedule · Local time (Dublin)</span>
+        <div class="legend"><i class="t-talk"></i>Talk <i class="t-paper"></i>Papers <i class="t-interactive"></i>Interactive <i class="t-panel"></i>Panel <i class="t-break"></i>Break</div>
+      </div>
+      <ol id="schedule"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPEAKERS ============ -->
+<section class="section section--alt" id="speakers">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow mono">06 — Keynotes</p>
+      <h2>Invited speakers</h2>
+      <p class="lead">Perspectives spanning data mining, language agents, structured reasoning, and large-scale industrial systems. Announcements coming soon.</p>
+    </div>
+    <div class="people people--speakers" id="speakersGrid"></div>
+  </div>
+</section>
+
+<!-- ============ ORGANIZERS ============ -->
+<section class="section" id="organizers">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow mono">07 — Team</p>
+      <h2>Organizers</h2>
+      <p class="lead">An international team across academia and industry, spanning data mining, LLM agents, recommendation, structured &amp; temporal data, multimodal learning, and trustworthy AI.</p>
+    </div>
+    <div class="people" id="organizersGrid"></div>
+
+    <div id="pcBlock" hidden>
+      <h3 class="pc__title">Program Committee</h3>
+      <ul class="pc" id="pcList"></ul>
+    </div>
+    <p class="pc__soon reveal" id="pcSoon">Program Committee — to be announced.</p>
+  </div>
+</section>
+
+<!-- ============ OUTCOMES / CONTACT ============ -->
+<section class="section section--alt" id="contact">
+  <div class="wrap grid-2">
+    <div class="reveal">
+      <p class="eyebrow mono">08 — Beyond the day</p>
+      <h2>Community outcomes</h2>
+      <ul class="ticks ticks--lg">
+        <li>The <b>AgentDM Research Roadmap</b> of open problems</li>
+        <li>An <b>Evaluation Checklist</b> for agentic structured data mining</li>
+        <li>A curated public index of <b>datasets, environments &amp; tools</b></li>
+        <li>A shortlist of <b>candidate shared tasks</b> for a future benchmark</li>
+      </ul>
+    </div>
+    <div class="contact reveal">
+      <p class="eyebrow mono">Contact</p>
+      <h3>Questions?</h3>
+      <p>Reach the organizing committee at</p>
+      <a id="emailLink" class="contact__mail"></a>
+      <p class="fine">Follow this page for the full CFP, submission portal, and speaker announcements.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="brand"><img src="assets/img/favicon.svg" alt="" width="22" height="22"><span>Agent<b>DM</b></span></div>
+    <p>The First Workshop on Structured Data Mining with LLM Agents · co-located with <a id="confLink" target="_blank" rel="noopener">The ACM Web Conference 2027</a>, Dublin.</p>
+    <p class="mono fine">© 2027 AgentDM Organizers</p>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
